@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Signup Form</title>
+    <style>
+        * {
+    margin: 5px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: rgb(129, 118, 118);
+}
+.container {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    background: white;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.signin, .signup {
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+}
+.signin {
+    background: white;
+}
+.signup {
+    background: linear-gradient(to right, #f14e4e, #ff4b2b);
+    color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.social {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #ddd;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: black;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: #ff4b2b;
+    margin: 10px 0;
+}
+
+.btn {
+    background: #ff4b2b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.outline {
+    background: none;
+    border: 2px solid white;
+}
+    </style>
+</head>
+<body>
+    <form class="container" method="get" action="">
+        <div class="signin">
+            <h1>Sign in</h1>
+            <div class="social-icons">
+                <a href="#" class="social">f</a>
+                <a href="#" class="social">G+</a>
+                <a href="#" class="social">in</a>
+            </div>
+            <p>or use your account</p>
+            <label for="email">Email id:</label>
+            <input type="email" placeholder="Email" required>
+            <label for="">Password</label>
+            <input type="password" placeholder="Password" required>
+            <a href="#">Forgot your password?</a>
+            <button class="btn">Sign In</button>
+        </div>
+        <div class="signup">
+            <br><br><br><br>
+            <h1>Hello, Friend!</h1>
+            <br>
+            <p>Enter your personal details and start your journey with us</p>
+            <br>
+            <button class="btn outline">Sign Up</button>
+        </div>
+    </form>
+</body>
+</html>

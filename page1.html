@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Animated Portfolio</title>
+  <style>
+    /* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #aed8f0;
+  color: #333;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 50px 0;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  margin-bottom: 30px;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #007bff;
+}
+section {
+  margin: 50px auto;
+  max-width: 900px;
+}
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex: 1 1 40%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+.skills-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.skills-list li {
+  background: #e0e0e0;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+.skills-list li:hover {
+  background: #c1c1c1;
+}
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9em;
+  color: #888;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+.slide-in {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideIn 1s ease-out forwards;
+}
+.slide-down {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: slideDown 1s ease-out forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  </style>
+</head>
+<body>
+  <header class="fade-in">
+    <h1>Hi, I'm Rajput Ghogikar Varun Raj</h1>
+    <p>Fullstack Developer | Problem Solver | Tech Enthusiast</p>
+  </header>
+  <nav class="slide-down">
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="projects" class="fade-in">
+    <h2>Projects</h2><br>
+    <div class="project-grid">
+      <div class="project-card slide-in">
+        <h3>Project One</h3>
+        <p>Indusind Bank(Pragati)</p>
+      </div>
+      <div class="project-card slide-in">
+        <h3>Project Two</h3>
+        <p>Bfil(Sks) Ptsmart</p>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="fade-in">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li><br>
+      <li>CSS</li><br>
+      <li>JavaScript</li><br>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate developer with experience in building responsive web applications. I love solving problems and learning new technologies.
+    </p>
+  </section>
+  <section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <p>Email: varunraj7842@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ghogikar-varun-raj-a95911244/" target="_blank">Click Here</a></p>
+  </section>
+
+  <footer class="fade-in">
+    <p>&copy; 2025 Varun's. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
