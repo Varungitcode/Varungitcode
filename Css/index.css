@@ -1,0 +1,68 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(175, 72, 85, 0.5)), url('../Assets/Background.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 4rem;
+  animation: fadeInDown 1s ease-in-out;
+}
+.hero p {
+  font-size: 1.5rem;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.section {
+  padding: 80px 0;
+}
+.progress-bar {
+  animation: growBar 2s ease-in-out;
+}
+@keyframes growBar {
+  from { width: 0; }
+  to { width: 100%; }
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+footer {
+  background-color: #222;
+  color: rgb(255, 255, 255);
+  padding: 20px 0;
+  text-align: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;  
+    margin-top: 10px;
+    box-shadow: 0px 0px 20px white;
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px ;
+    display: flex;
+    position: relative;
+    left: 100px;  
+    top: 70%;
+}
+.button:hover {
+    background: rgb(230, 196, 196);
+    box-shadow: 5px 5px 5px rgb(159, 159, 211);
+}
